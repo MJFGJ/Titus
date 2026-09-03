@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titus</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --accent: #2563eb;
+    --card-bg: #ffffff;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f10;
+      --fg: #eaeaea;
+      --muted: #999;
+      --accent: #60a5fa;
+      --card-bg: #1a1a1c;
+      --border: #2a2a2c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 2rem;
+  }
+  main {
+    max-width: 560px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin: 0 0 2rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+  }
+  .card p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  .links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  a.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: border-color 0.15s ease;
+  }
+  a.button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  footer {
+    margin-top: 2.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Titus</h1>
+  <p class="tagline">A toy example, published.</p>
+  <div class="card">
+    <p>Here is some more text!</p>
+    <p>And here is some more text again!</p>
+    <p>3rd time's the charm!!</p>
+  </div>
+  <div class="links">
+    <a class="button" href="https://github.com/MJFGJ/Titus">View on GitHub &rarr;</a>
+  </div>
+  <footer>Titus &middot; built with GitHub Pages</footer>
+</main>
+</body>
+</html>
